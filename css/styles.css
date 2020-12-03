@@ -1,0 +1,26 @@
+:root{
+--color-unique:#1abc9c;
+}
+*{
+margin: 0;
+padding: 0;
+}
+body{
+background: #f6f6f6;
+font-family:'Roboto Condensed', sans-serif;
+}
+header>.navbar>.navbar-brand{
+font-weight:bold;
+text-transform: uppercase;
+}
+header>.navbar>.navbar-brand:before{
+content:'Rootos';
+margin-right:5px;
+}
+header>.navbar>.navbar-brand:after{
+content:'Web';
+color:var(--color-unique);
+border:2px solid;
+padding:0 5px;
+border-radius:4px;
+}
