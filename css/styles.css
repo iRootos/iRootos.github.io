@@ -1,26 +1,49 @@
 :root{
 --color-unique:#1abc9c;
 }
+html{
+height:100%;
+margin:0;
+padding:0;
+}
+body{
+background: #111;
+font-family:'Open Sans', sans-serif;
+color:white;
+}
 *{
 margin: 0;
 padding: 0;
 }
-body{
-background: #f6f6f6;
-font-family:'Roboto Condensed', sans-serif;
+header{
+top:0;
+position:sticky;
+left:0;
+right:0;
+background:#222;
+color:White;
+height:50px;
+line-height:50px;
+padding:0 15px;
+box-shadow:0 2px 2px 0 rgb(0 0 0 / 14%), 0 1px 5px 0 rgb(0 0 0 / 12%), 0 3px 1px -2px rgb(0 0 0 / 20%);
 }
-header>.navbar>.navbar-brand{
-font-weight:bold;
+header>.logo>a{
 text-transform: uppercase;
+font-weight:600;
+font-size:24px;
+text-decoration: none;
+color:inherit;
 }
-header>.navbar>.navbar-brand:before{
-content:'Rootos';
-margin-right:5px;
-}
-header>.navbar>.navbar-brand:after{
+header>.logo>a:after{
 content:'Web';
+font-weight: 400;
 color:var(--color-unique);
-border:2px solid;
-padding:0 5px;
-border-radius:4px;
+}
+#wrapper{
+width:1100px;
+margin:0 auto;
+}
+#wrapper>.container{
+height:500px;
+padding:10px;
 }
